@@ -340,7 +340,7 @@
                             <!--<skip>false</skip>-->
                             <skipTests>${skipTests}</skipTests>
 
-                            <test>at.it4health.test.servicea.DemoServiceATest</test>
+                            <!--<test>at.it4health.test.servicea.DemoServiceATest</test>-->
                         </configuration>
                         <dependencies>
                             <dependency>

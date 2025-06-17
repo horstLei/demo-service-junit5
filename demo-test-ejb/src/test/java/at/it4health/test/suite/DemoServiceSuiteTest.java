@@ -16,4 +16,5 @@ import org.junit.platform.suite.api.SuiteDisplayName;
 })
 public class DemoServiceSuiteTest {
 
+    // fails on no tests found with this tag
 }

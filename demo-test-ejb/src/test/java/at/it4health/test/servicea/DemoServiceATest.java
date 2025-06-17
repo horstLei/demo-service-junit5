@@ -2,6 +2,7 @@ package at.it4health.test.servicea;
 
 import at.it4health.modulea.service.ModuleAService;
 import org.jboss.arquillian.container.test.api.OperateOnDeployment;
+import org.jboss.arquillian.junit5.container.annotation.ArquillianTest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -10,6 +11,7 @@ import javax.inject.Inject;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ArquillianTest
 public class DemoServiceATest extends BaseDemoServiceATest{
 
     @Inject

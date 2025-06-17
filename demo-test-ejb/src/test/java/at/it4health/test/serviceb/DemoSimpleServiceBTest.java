@@ -9,14 +9,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 @ArquillianTest
-public class DemoServiceBTest extends BaseDemoServiceBTest {
+public class DemoSimpleServiceBTest extends BaseDemoServiceBTest {
 
     @Test
     @Tag("simpleTest")
     @OperateOnDeployment("app_services")
     public void functionATest() {
 
-        System.out.println("functionATest executed...");
+        System.out.println("DemoSimpleServiceBTest.functionATest executed...");
         fail("fail is not called");
     }
 
