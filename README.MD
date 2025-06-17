@@ -15,6 +15,11 @@ to be able to access the local repo you have to add the file
 </settingsSecurity>
 
 
+# IMPORTANT
+i have in the demo-test-ejb/test/resources/arquillian.xml
+
+the jboss_home fully qualified with MY local path !!
+
 # build
 
 top level directory
