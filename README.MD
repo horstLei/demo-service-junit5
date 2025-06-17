@@ -23,6 +23,10 @@ cd demo-test-ejb
 execute single suite
 mvn clean install -Parq-jboss-managed -Dtest=at.it4health.test.suite.DemoServiceSuiteTest
 
+expected behaviour / acutal behaviour
+
+
+
 
 # test REST
 

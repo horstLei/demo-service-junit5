@@ -2,6 +2,7 @@ package at.it4health.test.servicea;
 
 import at.it4health.modulea.service.ModuleAService;
 import org.jboss.arquillian.container.test.api.OperateOnDeployment;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -14,15 +15,51 @@ public class DemoServiceATest extends BaseDemoServiceATest{
     @Inject
     ModuleAService moduleAService;
 
+    @BeforeEach
+    public void setupTest(){    
+        super.init();
+    }
+
     @Test
-    @Tag("tagToTest")
+    @Tag("failOnFirst")
     @OperateOnDeployment("app_services")
     public void functionATest(){
 
-        System.out.println("moduleAService executed: " + moduleAService.functionA());
+        System.out.println("moduleAService.functionATest executed: " + moduleAService.functionA());
+
+        assertEquals(ModuleAService.FUNCTION_A_TESTSTRING, moduleAService.functionA());
+
+        // if enabled fails
+        fail("fails on first TestCase");
+    }
+
+    @Test
+    @Tag("failOnSecond")
+    @OperateOnDeployment("app_services")
+    public void functionBTest(){
+
+        System.out.println("moduleAService.functionBTest executed: " + moduleAService.functionA());
+
+        assertEquals(ModuleAService.FUNCTION_A_TESTSTRING, moduleAService.functionA());
+    }
+
+    @Test
+    @Tag("assertOnFirst")
+    @OperateOnDeployment("app_services")
+    public void functionCTest(){
+
+        System.out.println("moduleAService.functionCTest executed: " + moduleAService.functionA());
+
+        assertEquals(ModuleAService.FUNCTION_A_TESTSTRING, moduleAService.functionA());
+    }
+
+    @Test
+    @Tag("assertOnSecond")
+    @OperateOnDeployment("app_services")
+    public void functionDTest(){
+
+        System.out.println("moduleAService.functionDTest executed: " + moduleAService.functionA());
 
         assertEquals(ModuleAService.FUNCTION_A_TESTSTRING, moduleAService.functionA() + "_test");
-
-        //fail("test");
     }
 }
