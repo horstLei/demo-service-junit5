@@ -37,7 +37,7 @@ mvn clean install -Parq-jboss-managed -Dtest=at.it4health.test.suite.DemoService
 expected behaviour / actual behaviour
 correct exeption thrown no tests to execute found
 
-execute single suite DemoSimpleServiceSuiteTest
+## execute single suite DemoSimpleServiceSuiteTest
 
 ````
 mvn clean install -Parq-jboss-managed -Dtest=at.it4health.test.suite.DemoSimpleServiceSuiteTest
@@ -62,7 +62,7 @@ output: DemoSimpleServiceBTest.functionATest executed...
 result: SUCCESS Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
 
-other descriptions are following...
+## other descriptions are following...
 
 
 
