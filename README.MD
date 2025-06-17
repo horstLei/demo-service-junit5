@@ -61,7 +61,7 @@ output: DemoSimpleServiceATest.functionATest executed: ModuleAService.functionA(
 result: SUCCESS Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 ````
 ````
-at.it4health.test.serviceb.DemoSimpleServiceBTest.functionATest / fails
+at.it4health.test.serviceb.DemoSimpleServiceBTest.functionATest
 output: DemoSimpleServiceBTest.functionATest executed...
 result: SUCCESS Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 ````
