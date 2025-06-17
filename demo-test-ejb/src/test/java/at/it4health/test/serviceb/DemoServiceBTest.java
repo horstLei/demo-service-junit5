@@ -17,7 +17,7 @@ public class DemoServiceBTest extends BaseDemoServiceBTest {
     @OperateOnDeployment("app_services")
     public void functionATest() {
 
-        System.out.println("functionATest executed...");
+        System.out.println("DemoServiceBTest.functionATest executed...");
         fail("fail is not called");
     }
 
@@ -25,7 +25,7 @@ public class DemoServiceBTest extends BaseDemoServiceBTest {
     @Tag("failOnSecond")
     @OperateOnDeployment("app_services")
     public void functionBTest() {
-        System.out.println("functionBTest executed...");
+        System.out.println("DemoServiceBTest.functionBTest executed...");
         fail("fail is not called");
     }
 
@@ -33,7 +33,7 @@ public class DemoServiceBTest extends BaseDemoServiceBTest {
     @Tag("assertOnFirst")
     @OperateOnDeployment("app_services")
     public void functionCTest() {
-        System.out.println("functionCTest executed...");
+        System.out.println("DemoServiceBTest.functionCTest executed...");
         assertEquals(1, 1);
     }
 
@@ -41,7 +41,7 @@ public class DemoServiceBTest extends BaseDemoServiceBTest {
     @Tag("assertOnSecond")
     @OperateOnDeployment("app_services")
     public void functionDTest() {
-        System.out.println("functionDTest executed...");
+        System.out.println("DemoServiceBTest.functionDTest executed...");
         assertEquals(1, -1);
     }
 }
