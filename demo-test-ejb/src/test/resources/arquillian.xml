@@ -9,7 +9,7 @@
     </engine>
     <container qualifier="jboss-managed" default="true">
         <configuration>
-            <property name="jbossHome">/data/private_projects/demo-tests/demo-service-junit5/demo-test-ejb/target/wildfly-18.0.1.Final</property>
+            <property name="jbossHome">./target/wildfly-18.0.1.Final</property>
             <property name="javaVmArguments">-Xmx4096m  -Duser.timezone=UTC -Dfile.encoding=UTF-8 </property>
             <!-- -XX:MaxPermSize=256m -Dlogging.configuration=file:%JBOSS_CONFIG_DIR%/logging.properties -Djava.util.logging.manager=org.jboss.logmanager.LogManager -->
             <!--

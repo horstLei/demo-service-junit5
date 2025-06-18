@@ -18,7 +18,7 @@ to be able to access the local repo you have to add the file
 # IMPORTANT
 i have in the demo-test-ejb/test/resources/arquillian.xml
 
-the jboss_home fully qualified with MY local path !!
+FIXED: is now relative to the test / NOT NEEDED anymore - the jboss_home fully qualified with MY local path !!
 
 # build
 
