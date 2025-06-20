@@ -6,8 +6,7 @@ import org.jboss.arquillian.junit5.container.annotation.ArquillianTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 @ArquillianTest
 public class DemoServiceBTest extends BaseDemoServiceBTest {
@@ -33,8 +32,10 @@ public class DemoServiceBTest extends BaseDemoServiceBTest {
     @Tag("assertOnFirst")
     @OperateOnDeployment("app_services")
     public void functionCTest() {
-        System.out.println("DemoServiceBTest.functionCTest executed...");
-        assertEquals(1, 1);
+        System.out.println("DemoServiceBTest.functionCTest executed..." + Integer.valueOf(1).equals(Integer.valueOf(-1)));
+        assertNotEquals(1, 1);
+        assertEquals(1, -1);
+        fail("fail is not called");
     }
 
     @Test

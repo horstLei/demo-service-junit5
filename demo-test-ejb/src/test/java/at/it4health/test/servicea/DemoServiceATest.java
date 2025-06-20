@@ -27,7 +27,7 @@ public class DemoServiceATest extends BaseDemoServiceATest{
     @OperateOnDeployment("app_services")
     public void functionATest(){
 
-        System.out.println("DemoServiceBTest.functionATest executed: " + moduleAService.functionA());
+        System.out.println("DemoServiceATest.functionATest executed: " + moduleAService.functionA());
 
         assertEquals(ModuleAService.FUNCTION_A_TESTSTRING, moduleAService.functionA());
 
@@ -40,7 +40,7 @@ public class DemoServiceATest extends BaseDemoServiceATest{
     @OperateOnDeployment("app_services")
     public void functionBTest(){
 
-        System.out.println("DemoServiceBTest.functionBTest executed: " + moduleAService.functionA());
+        System.out.println("DemoServiceATest.functionBTest executed: " + moduleAService.functionA());
 
         assertEquals(ModuleAService.FUNCTION_A_TESTSTRING, moduleAService.functionA());
     }
@@ -50,7 +50,7 @@ public class DemoServiceATest extends BaseDemoServiceATest{
     @OperateOnDeployment("app_services")
     public void functionCTest(){
 
-        System.out.println("DemoServiceBTest.functionCTest executed: " + moduleAService.functionA());
+        System.out.println("DemoServiceATest.functionCTest executed: " + moduleAService.functionA());
 
         assertEquals(ModuleAService.FUNCTION_A_TESTSTRING, moduleAService.functionA());
     }
@@ -60,7 +60,7 @@ public class DemoServiceATest extends BaseDemoServiceATest{
     @OperateOnDeployment("app_services")
     public void functionDTest(){
 
-        System.out.println("DemoServiceBTest.functionDTest executed: " + moduleAService.functionA());
+        System.out.println("DemoServiceATest.functionDTest executed: " + moduleAService.functionA());
 
         assertEquals(ModuleAService.FUNCTION_A_TESTSTRING, moduleAService.functionA() + "_test");
     }
